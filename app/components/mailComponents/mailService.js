@@ -24,7 +24,7 @@ angular.module('app').service('mailService', function($http,$state) {
     deleteMails : function(items) {
       for (var i = 0; i < items.length; i++) {
         items[i].subject = 'trash';
-        $http.patch('http://test-api.javascript.ru/v1/ymasyan/letters/'+items[i]._id, items[i]).then(function(resp) {
+        $http.patch('https://test-api.javascript.ru/v1/ymasyan/letters/'+items[i]._id, items[i]).then(function(resp) {
           console.log('deleted');
           console.log(items);
         });
@@ -34,7 +34,7 @@ angular.module('app').service('mailService', function($http,$state) {
     restoreMails : function(items) {
       for (var i = 0; i < items.length; i++) {
         items[i].subject = 'inbox';
-        $http.patch('http://test-api.javascript.ru/v1/ymasyan/letters/'+items[i]._id, items[i]).then(function(resp) {
+        $http.patch('https://test-api.javascript.ru/v1/ymasyan/letters/'+items[i]._id, items[i]).then(function(resp) {
           console.log('Restored');
           console.log(items);
         });
@@ -45,7 +45,7 @@ angular.module('app').service('mailService', function($http,$state) {
       console.log('newMail');
       console.log(item);
 
-      $http.post('http://test-api.javascript.ru/v1/ymasyan/letters/', item).then(function(resp) {
+      $http.post('https://test-api.javascript.ru/v1/ymasyan/letters/', item).then(function(resp) {
         console.log('sent');
         console.log(item);
         alert('sent!');

@@ -9,7 +9,7 @@ angular.module('app').factory('menuToggleService', function ($http) {
   menuToggleService.getData = function () {
     $http({
       method: 'GET',
-      url: 'http://test-api.javascript.ru/v1/ymasyan/mailboxes'
+      url: 'https://test-api.javascript.ru/v1/ymasyan/mailboxes'
     }).then(function (response) {
       console.log('Данные получены!');
       // menuToggleService.mailBox = {current:{},boxes:[]};
