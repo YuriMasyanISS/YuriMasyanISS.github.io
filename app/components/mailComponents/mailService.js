@@ -4,14 +4,14 @@
 angular.module('app').service('mailService', function($http,$state) {
   let mailService = {
     getAllMails : function() {
-      return $http.get(' http://test-api.javascript.ru/v1/ymasyan').then(function(resp) {
+      return $http.get(' https://test-api.javascript.ru/v1/ymasyan').then(function(resp) {
         console.log('resp');
         console.log(resp);
         return resp.data.letters;
       });
     },
     getTrashMails : function() {
-      return $http.get(' http://test-api.javascript.ru/v1/ymasyan').then(function(resp) {
+      return $http.get(' https://test-api.javascript.ru/v1/ymasyan').then(function(resp) {
         console.log('resp');
         console.log(resp);
         let response =[];
