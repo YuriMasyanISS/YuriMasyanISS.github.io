@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gmail clone</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="public/css/bootstrap.css">
+    <link rel="stylesheet" href="public/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="public/css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-cookies.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-messages.min.js"></script>
+
+    <!--<script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>-->
+    <!--<script src="//npmcdn.com/angular-ui-router@1.0.0-rc.1/release/angular-ui-router.js"></script>-->
+    <script src="https://unpkg.com/angular-ui-router@0.4.2/release/angular-ui-router.js"></script>
+
+
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+    <script src="app/app.js"></script>
+
+    <script src="app/app.config.js"></script>
+    <!--<base href="/">-->
+
+    <style>
+        .active {
+            color: #d14836;
+        }
+    </style>
+    <script src="app/components/userComponents/userCardComponent.js"></script>
+    <script src="app/components/userComponents/userListComponent.js"></script>
+    <script src="app/components/authComponent/loginComponent.js"></script>
+    <script src="assets/angular-breadcrumb.js"></script>
+    <script src="app/components/authComponent/loginLogoutComponent.js"></script>
+    <script src="app/components/authComponent/registerComponent.js"></script>
+    <script src="app/components/authComponent/authService.js"></script>
+    <script src="app/components/userComponents/userService.js"></script>
+    <script src="app/components/authComponent/userService.js"></script>
+    <script src="app/directives/showDuringResolve.js"></script>
+    <script src="app/components/mailComponents/messageComponent.js"></script>
+    <script src="app/components/mailComponents/inboxComponent.js"></script>
+    <script src="app/components/commonComponents/commonComponent.js"></script>
+    <script src="app/components/commonComponents/searchComponent/searchComponent.js"></script>
+    <script src="app/components/commonComponents/searchComponent/searchService.js"></script>
+    <script src="app/components/mailComponents/mailService.js"></script>
+    <script src="app/components/mailComponents/inboxSidebarComponent.js"></script>
+    <script src="app/components/mailComponents/newMailComponent.js"></script>
+    <script src="app/components/commonComponents/selectComponent/selectComponent.js"></script>
+    <script src="app/components/commonComponents/mailToggleComponent/menuToggleComponent.js"></script>
+    <script src="app/components/commonComponents/mailToggleComponent/menuToggleService.js"></script>
+    <script src="app/components/userComponents/userSidebarComponent.js"></script>
+    <script src="app/components/mailComponents/inboxTrashComponent.js"></script>
+    <script src="app/components/userComponents/userNewComponent.js"></script>
+</head>
+<body ng-app="app">
+
+<!--          !!!        СМОТРЕТЬ ВНИЗУ              !!!        -->
+
+
+<ui-view></ui-view>
+
+</body>
+</html>
